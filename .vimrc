@@ -47,6 +47,7 @@ autocmd FileType nerdtree setlocal relativenumber
 "  Control-P Configuration
 " ************************
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+map <C-z> :CtrlPBuffer<CR>
 
 
 " *************
