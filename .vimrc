@@ -19,7 +19,7 @@ let mapleader = ","
 set ignorecase
 
 " Show Page Numbers
-set number
+"set number
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -40,7 +40,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 let NERDTreeQuitOnOpen = 0
 let NERDTreeShowHidden=1
-
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
 
 " ************************
 "  Control-P Configuration
@@ -66,11 +67,14 @@ set guifont=Monaco:h12
 " **************************
 " Navigation between Splits  
 " **************************
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
-
+"nmap <silent> <A-Up> :wincmd k<CR>
+"nmap <silent> <A-Down> :wincmd j<CR>
+"nmap <silent> <A-Left> :wincmd h<CR>
+"nmap <silent> <A-Right> :wincmd l<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 set shortmess+=A
 
 " nerdcommenter
@@ -92,17 +96,18 @@ set incsearch
 """"""""""""""""""
 "Relative line number 
 set relativenumber
+setglobal relativenumber
 
 "Toggling between relative and absolute line number
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
+"function! NumberToggle()
+  "if(&relativenumber == 1)
+    "set number
+  "else
+    "set relativenumber
+  "endif
+"endfunc
 
-nnoremap <C-l> :call NumberToggle()<cr>
+"nnoremap <C-l> :call NumberToggle()<cr>
 
 " Treat long lines as break lines (useful when moving around in them)
 "map j gj
