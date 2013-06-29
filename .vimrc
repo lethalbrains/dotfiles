@@ -27,21 +27,6 @@ set backspace=indent,eol,start
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 
-" ************************
-"  NERDTree Configuration
-" ************************
-" Open NerdTree by default if file name not specified with vim
-autocmd vimenter * if !argc() | NERDTree | endif
-
-" Shortcut for opening NerdTree
-map <C-n> :NERDTreeToggle<CR>
-
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-let NERDTreeQuitOnOpen = 0
-let NERDTreeShowHidden=1
-let NERDTreeShowLineNumbers=1
-autocmd FileType nerdtree setlocal relativenumber
 
 " ************************
 "  Control-P Configuration
@@ -165,3 +150,18 @@ endif
 
 "TagBar settings
 nmap <S-f> :TagbarToggle<CR>
+" ************************
+"  NERDTree Configuration
+" ************************
+" Open NerdTree by default if file name not specified with vim
+autocmd vimenter * if !argc() | NERDTree | endif
+
+" Shortcut for opening NerdTree
+map <C-n> :NERDTreeToggle<CR>
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+let NERDTreeQuitOnOpen = 0
+let NERDTreeShowHidden=1
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
