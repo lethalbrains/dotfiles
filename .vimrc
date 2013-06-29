@@ -165,3 +165,39 @@ let NERDTreeQuitOnOpen = 0
 let NERDTreeShowHidden=1
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
+
+"-------------------------------
+" Fix constant spelling mistakes
+"-------------------------------
+
+iab Acheive    Achieve
+iab acheive    achieve
+iab Alos       Also
+iab alos       also
+iab Aslo       Also
+iab aslo       also
+iab Becuase    Because
+iab becuase    because
+iab Bianries   Binaries
+iab bianries   binaries
+iab Bianry     Binary
+iab bianry     binary
+iab Charcter   Character
+iab charcter   character
+iab Charcters  Characters
+iab charcters  characters
+iab Exmaple    Example
+iab exmaple    example
+iab Exmaples   Examples
+iab exmaples   examples
+iab Seperate   Separate
+iab seperate   separate
+iab Shoudl     Should
+iab shoudl     should
+iab Taht       That
+iab taht       that
+iab Teh        The
+iab teh        the
+
+" set visual bell -- i hate that damned beeping
+set vb
