@@ -133,7 +133,7 @@ map ) $
 
 
 " Enter to go to the command line with :
-nmap <cr> :
+"nmap <cr> :
 
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
