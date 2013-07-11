@@ -201,3 +201,8 @@ iab teh        the
 
 " set visual bell -- i hate that damned beeping
 set vb
+
+" Mapping command shift to maximize or minimize the current split
+nnoremap <D-S-CR> :MaximizerToggle<CR>
+vnoremap <D-S-CR> :MaximizerToggle<CR>gv
+inoremap <D-S-CR> <C-o>:MaximizerToggle<CR>
