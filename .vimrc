@@ -32,7 +32,7 @@ set showcmd		" display incomplete commands
 "  Control-P Configuration
 " ************************
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-map <C-z> :CtrlPBuffer<CR>
+map <C-b> :CtrlPBuffer<CR>
 
 
 " *************
