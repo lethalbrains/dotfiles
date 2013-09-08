@@ -131,6 +131,8 @@ map ! ^
 " Remap VIM 0 to last non-blank character
 map ) $
 
+" ;; maps to :w
+noremap ;; <Esc>:w<CR>
 
 " Enter to go to the command line with :
 "nmap <cr> :
