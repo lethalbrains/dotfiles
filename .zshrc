@@ -8,6 +8,11 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="rahul"
 
+#setting default mode to vim 
+set -o vi
+bind -m vi-insert '"jj": vi-movement-mode'
+bind -m vi-insert '"\C-l": clear-screen'
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
