@@ -80,8 +80,9 @@ set incsearch
 """"""""""""""""""
 " Moving around
 """"""""""""""""""
-"Relative line number 
-set relativenumber
+"Hybrid line number # requires vim >= 7.4
+set relativenumber 
+set number
 setglobal relativenumber
 
 "Toggling between relative and absolute line number
