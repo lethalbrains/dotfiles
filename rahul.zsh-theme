@@ -16,7 +16,7 @@ local git_branch='%{$reset_color%}$(git_time_since_commit)$(git_prompt_info) % %
 
 PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
 ╰─%B   %{$fg_bold[red]➜%b%b "
-RPS1="${return_code}"
+
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}git%{$reset_color%}@%{$fg_bold[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
