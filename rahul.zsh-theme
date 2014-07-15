@@ -5,13 +5,14 @@ local user_host='$fg_bold[green]%}Rahul%{$reset_color%}'
 #local user_host='$fg_bold[green]%}राहुल%{$reset_color%}'
 local current_dir='%{$terminfo[bold]$fg[blue]%} %c%{$reset_color%}'
 local rvm_ruby=''
-if which rvm-prompt &> /dev/null; then
-  rvm_ruby='%{$fg[cyan]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
-else
-  if which rbenv &> /dev/null; then
-    rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
-  fi
-fi
+rvm_ruby='%{$fg[cyan]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
+#if which rvm-prompt &> /dev/null; then
+  #rvm_ruby='%{$fg[cyan]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
+#else
+  #if which rbenv &> /dev/null; then
+    #rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
+  #fi
+#fi
 local git_branch='%{$reset_color%}$(git_time_since_commit)$(git_prompt_info) % %{$reset_color%}'
 
 PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
