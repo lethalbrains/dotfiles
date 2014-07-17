@@ -1,6 +1,3 @@
-"Pathogen config
-"execute pathogen#infect()
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -132,6 +129,12 @@ set incsearch
 set relativenumber 
 set number
 setglobal relativenumber
+
+" Don't use arrow keys
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
 "Toggling between relative and absolute line number
 "function! NumberToggle()
