@@ -91,6 +91,12 @@ let g:seoul256_background = 233
 colo seoul256
 set guifont=Monaco:h12
 
+" *************
+"  Goyo 
+" *************
+map <F2> :Limelight!!<CR>
+nnoremap <Leader><Space> :Goyo<CR> \| :Limelight<CR>
+
 
 " **************************
 " Navigation between Splits  
