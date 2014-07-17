@@ -271,4 +271,17 @@ let g:multi_cursor_prev_key='<C-d>'
 let g:multi_cursor_skip_key='<C-f>'
 let g:multi_cursor_quit_key='<Esc>'
 
+" Clone Paragraph with cp
+noremap cp yap<S-}>p
+
+" Align Current Paragraph with Leader + a
+noremap <leader>a =ip
+
+" Toggle Paste Mode
+set pastetoggle=<leader>z
+
+" Shift + Direction to Change Tabs
+noremap <S-l> gt
+noremap <S-h> gT
+
 
