@@ -17,6 +17,7 @@ Plugin 'junegunn/limelight.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'klen/python-mode'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
@@ -34,6 +35,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'jimenezrick/vimerl'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
