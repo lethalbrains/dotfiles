@@ -17,11 +17,15 @@ Plugin 'junegunn/limelight.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+"Plugin 'vim-scripts/paredit.vim'
 Plugin 'klen/python-mode'
+"Plugin 'luochen1990/rainbow'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-commentary'
+"Plugin 'guns/vim-clojure-static'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fireplace'
@@ -286,4 +290,7 @@ set pastetoggle=<leader>z
 noremap <S-l> gt
 noremap <S-h> gT
 
-
+nmap zz yygccp
+vmap zz V&lt;Esc>gvygvgc`>p
+" Initializing Rainbow Parantheses
+"let g:rainbow_active = 1
