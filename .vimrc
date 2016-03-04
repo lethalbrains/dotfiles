@@ -13,12 +13,14 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'vim-scripts/EasyGrep'
 Plugin 'junegunn/goyo.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'vim-scripts/paredit.vim'
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 "Plugin 'luochen1990/rainbow'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'majutsushi/tagbar'
@@ -33,6 +35,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'elzr/vim-json'
 Plugin 'szw/vim-maximizer'
 "Plugin 'osyo-manga/vim-over'
+Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-ruby/vim-ruby'
@@ -295,3 +298,4 @@ nmap zz yygccp
 vmap zz V&lt;Esc>gvygvgc`>p
 " Initializing Rainbow Parantheses
 "let g:rainbow_active = 1
+
