@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdtree'
 "Plugin 'luochen1990/rainbow'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-commentary'
@@ -300,3 +301,7 @@ vmap zz V&lt;Esc>gvygvgc`>p
 " Initializing Rainbow Parantheses
 "let g:rainbow_active = 1
 
+nnoremap <Left> :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+nnoremap <Up> :resize -2<CR>
+nnoremap <Down> :resize +2<CR>
