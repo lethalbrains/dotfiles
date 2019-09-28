@@ -109,3 +109,4 @@ fpath=($fpath "/home/lethalbrains/.zfunctions")
   prompt spaceship
 
 alias wifi=nmtui
+export PATH="/home/lethalbrains/.config/i3-battery-popup:$PATH"
